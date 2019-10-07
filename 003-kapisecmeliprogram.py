@@ -3,7 +3,7 @@ import random
 tercih=int(input("Tercihinizi girin:"))
 odul= random.randint(1,10)
 if tercih!=odul:
-    print("Tercihiniz:",tercih, "Kalan kapı:",odul)
+    print("Kalan kapılar:",tercih,"ve",odul)
     skarar= int(input("Hangi numaralı kapıyı seçmek istersiniz? \n"))
     if odul==skarar:
         print("Kazandınız")
@@ -14,7 +14,7 @@ else:
         tercih=random.randint(1,10)
         if tercih!=odul:
             break
-    print("Tercihiniz:",tercih, "Kalan kapı:",odul)
+    print("Kalan kapılar:",tercih,"ve",odul)
     skarar=int(input("Hangi numaralı kapıyı seçmek istersiniz? \n"))
     if odul==skarar:
         print("Kazandınız")
