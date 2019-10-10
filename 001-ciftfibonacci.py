@@ -4,7 +4,7 @@ fib2=1
 i=3
 t=0
 n=int(input("Hangi sayıdan küçük tüm çift fibonacci sayılarının toplamını istersiniz?\n"))
-time.sleep(1)
+time.sleep(0.2)
 while(True):
     fib=fib1+fib2
     if int(fib/2)*2==int(fib):
