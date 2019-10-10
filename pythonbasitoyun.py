@@ -1,7 +1,7 @@
 import random
 
 """
-balik,tost,simit,cay
+balik,tost,simit,cay,para
 """
 canta = [0, 0, 0, 0,30]
 can = 100
