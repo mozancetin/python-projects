@@ -6,7 +6,7 @@ balik,tost,simit,cay
 canta = [0, 0, 0, 0,30]
 can = 100
 aclik = 100
-print("Game version: Alpha 0.0.0.2\nOyunu denemen için sana 30 TL verdim. İyi eğlenceler")
+print("Game version: Alpha 0.0.0.3\nOyunu denemen için sana 50 TL verdim. İyi eğlenceler")
 nick = input("Sana nasıl seslenmeliyim: ")
 print("Merhaba", nick, "Oyunuma Hoşgeldin!\n")
 while (True):
@@ -95,8 +95,8 @@ while (True):
                                 print("\n" * 50)
                                 canta[4] = canta[4] + 10
                                 print("Doğru bildin. 10TL hesabına aktarıldı. Yeni bakiyen:",canta[4],"TL")
-                                action = int(input("Bir daha oynamak ister misin?(5TL)\n\n Evet için: 1\n Hayır için: 2\n\n "))
-                                if action == 1:
+                                again = int(input("Bir daha oynamak ister misin?(5TL)\n\n Evet için: 1\n Hayır için: 2\n\n "))
+                                if again == 1:
                                     if canta[4] >= 5:
                                         print("\n" * 50)
                                         canta[4] = canta[4] - 5
@@ -106,15 +106,15 @@ while (True):
                                         print("\nYeterince paran yok gibi görünüyor...")
                                         input("Devam etmek için enter tuşuna bas\n ")
                                         break
-                                elif action == 2:
+                                elif again == 2:
                                     print("Oynadığın için teşekkürler")
                                     break
 
                             else:
                                 print("\n" * 50)
                                 print("Yanlış bildin. Bakiyen: ",canta[4],"TL")
-                                action = int(input("Bir daha oynamak ister misin?(5TL)\n\n Evet için: 1\n Hayır için: 2\n\n"))
-                                if action == 1:
+                                again = int(input("Bir daha oynamak ister misin?(5TL)\n\n Evet için: 1\n Hayır için: 2\n\n"))
+                                if again == 1:
                                     if canta[4] >= 5:
                                         print("\n" * 50)
                                         canta[4] = canta[4] - 5
@@ -124,7 +124,7 @@ while (True):
                                         print("\nYeterince paran yok gibi görünüyor...")
                                         input("Devam etmek için enter tuşuna bas\n ")
                                         break
-                                elif action == 2:
+                                elif again == 2:
                                     print("Oynadığın için teşekkürler")
                                     break
 
@@ -135,8 +135,8 @@ while (True):
                                 canta[4] = canta[4] + 10
                                 print("\n" * 50)
                                 print("Doğru bildin. 10TL hesabına aktarıldı. Yeni bakiyen:",canta[4],"TL")
-                                action = int(input("Bir daha oynamak ister misin?(5TL)\n\n Evet için: 1\n Hayır için: 2\n "))
-                                if action == 1:
+                                again = int(input("Bir daha oynamak ister misin?(5TL)\n\n Evet için: 1\n Hayır için: 2\n "))
+                                if again == 1:
                                     if canta[4] >= 5:
                                             print("\n" * 50)
                                             canta[4] = canta[4] - 5
@@ -146,15 +146,15 @@ while (True):
                                             print("\nYeterince paran yok gibi görünüyor...")
                                             input("Devam etmek için enter tuşuna bas\n ")
                                             break
-                                elif action == 2:
+                                elif again == 2:
                                     print("Oynadığın için teşekkürler")
                                     break
 
                             else:
                                 print("\n" * 50)
                                 print("Yanlış bildin. Bakiyen: ",canta[4],"TL")
-                                action = int(input("Bir daha oynamak ister misin?(5TL)\n\n Evet için: 1\n Hayır için: 2\n "))
-                                if action == 1:
+                                again = int(input("Bir daha oynamak ister misin?(5TL)\n\n Evet için: 1\n Hayır için: 2\n "))
+                                if again == 1:
                                     if canta[4] >= 5:
                                         print("\n" * 50)
                                         canta[4] = canta[4] - 5
@@ -164,7 +164,7 @@ while (True):
                                         print("\nYeterince paran yok gibi görünüyor...")
                                         input("Devam etmek için enter tuşuna bas\n ")
                                         break
-                                elif action == 2:
+                                elif again == 2:
                                     print("Oynadığın için teşekkürler")
                                     break
                     elif action == 2:
@@ -179,8 +179,8 @@ while (True):
                                 canta[4] = canta[4] + 10
                                 print("\n" * 50)
                                 print("Doğru bildin. 10TL hesabına aktarıldı. Yeni bakiyen:",canta[4],"TL")
-                                action = int(input("Bir daha oynamak ister misin?(5TL)\n\n Evet için: 1\n Hayır için: 2\n "))
-                                if action == 1:
+                                again = int(input("Bir daha oynamak ister misin?(5TL)\n\n Evet için: 1\n Hayır için: 2\n "))
+                                if again == 1:
                                     if canta[4] >= 5:
                                         print("\n" * 50)
                                         canta[4] = canta[4] - 5
@@ -190,15 +190,15 @@ while (True):
                                         print("\nYeterince paran yok gibi görünüyor...")
                                         input("Devam etmek için enter tuşuna bas\n ")
                                         break
-                                elif action == 2:
+                                elif again == 2:
                                     print("Oynadığın için teşekkürler")
                                     break
 
                             else:
                                 print("\n" * 50)
                                 print("Yanlış bildin. Bakiyen: ",canta[4],"TL")
-                                action = int(input("Bir daha oynamak ister misin?(5TL)\n\n Evet için: 1\n Hayır için: 2\n "))
-                                if action == 1:
+                                again = int(input("Bir daha oynamak ister misin?(5TL)\n\n Evet için: 1\n Hayır için: 2\n "))
+                                if again == 1:
                                     if canta[4] >= 5:
                                         print("\n" * 50)
                                         canta[4] = canta[4] - 5
@@ -208,7 +208,7 @@ while (True):
                                         print("\nYeterince paran yok gibi görünüyor...")
                                         input("Devam etmek için enter tuşuna bas\n ")
                                         break
-                                elif action == 2:
+                                elif again == 2:
                                     print("Oynadığın için teşekkürler")
                                     break
 
@@ -219,8 +219,8 @@ while (True):
                                 canta[4] = canta[4] + 10
                                 print("\n" * 50)
                                 print("Doğru bildin. 10TL hesabına aktarıldı. Yeni bakiyen:",canta[4],"TL")
-                                action = int(input("Bir daha oynamak ister misin?(5TL)\n\n Evet için: 1\n Hayır için: 2\n "))
-                                if action == 1:
+                                again = int(input("Bir daha oynamak ister misin?(5TL)\n\n Evet için: 1\n Hayır için: 2\n "))
+                                if again == 1:
                                     if canta[4] >= 5:
                                         print("\n" * 50)
                                         canta[4] = canta[4] - 5
@@ -230,15 +230,15 @@ while (True):
                                         print("\nYeterince paran yok gibi görünüyor...")
                                         input("Devam etmek için enter tuşuna bas\n ")
                                         break
-                                elif action == 2:
+                                elif again == 2:
                                     print("Oynadığın için teşekkürler")
                                     break
 
                             else:
                                 print("\n" * 50)
                                 print("Yanlış bildin. Bakiyen:",canta[4],"TL")
-                                action = int(input("Bir daha oynamak ister misin?(5TL)\n\n Evet için: 1\n Hayır için: 2\n "))
-                                if action == 1:
+                                again = int(input("Bir daha oynamak ister misin?(5TL)\n\n Evet için: 1\n Hayır için: 2\n "))
+                                if again == 1:
                                     if canta[4] >= 5:
                                         print("\n" * 50)
                                         canta[4] = canta[4] - 5
@@ -248,7 +248,7 @@ while (True):
                                         print("\nYeterince paran yok gibi görünüyor...")
                                         input("Devam etmek için enter tuşuna bas\n ")
                                         break
-                                elif action == 2:
+                                elif again == 2:
                                     print("Oynadığın için teşekkürler")
                                     break
 
@@ -257,18 +257,6 @@ while (True):
             else:
                 print("\nYeterince paran yok gibi görünüyor")
                 input("Devam etmek için enter tuşuna bas\n")
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         if action==2:
@@ -342,25 +330,6 @@ while (True):
                     else:
                         print("\nYeterince paran yok gibi görünüyor")
                         input("Devam etmek için enter tuşuna bas\n")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     elif action == 3:
         print("\n" * 50)
