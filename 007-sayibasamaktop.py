@@ -1,3 +1,4 @@
+#Girdiğiniz sayının basamakları toplamını bulur.
 try:
     n=int(input("Sayıyı girin: "))
     t=int(0)
