@@ -1,3 +1,4 @@
+#Tahmin ettiğiniz sayıyı en fazla 7 hamlede bulur
 import random
 c=1
 a=1
