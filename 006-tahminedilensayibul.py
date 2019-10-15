@@ -1,3 +1,4 @@
+#Programın tahmin ettiği sayıyı bul.
 import random
 n=random.randint(1,100)
 c=1
