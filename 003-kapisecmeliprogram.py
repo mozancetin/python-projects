@@ -1,3 +1,7 @@
+"""
+10 kapı var ve bu kapıların birinde hediye var. Hangi kapıda hediye olduğunu tahmin et!
+8 boş kapı açılacak ve sana hangi kapıyı istediğin tekrar sorulacak. Bakalım hediyeyi bulabilecek misin?
+"""
 import random
 
 tercih=int(input("Tercihinizi girin:"))
