@@ -1,3 +1,4 @@
+#Bir sayı tahmin et ve bilgisayar bulsun.
 import random
 c=1
 a=1
