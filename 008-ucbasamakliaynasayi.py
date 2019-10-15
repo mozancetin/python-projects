@@ -1,3 +1,4 @@
+#Tüm 3 basamaklı ayna sayıları gösteren program
 a=[]
 b=0
 while(True):
