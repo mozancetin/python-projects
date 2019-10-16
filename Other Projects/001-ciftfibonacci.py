@@ -1,4 +1,4 @@
-#İstediğiniz sayıdan küçük tüm çift fibonacci sayılarını yazdırır.
+#İstediğiniz sayıdan küçük tüm çift fibonacci sayılarını yazdırır
 import time
 fib1=1
 fib2=1
