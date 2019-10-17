@@ -1,3 +1,4 @@
+#Project euler sitesinde 4 milmiyona kadar deniyordu ancak ben genişletmek istedim.
 import time
 fib1=1
 fib2=1
