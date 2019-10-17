@@ -1,3 +1,4 @@
+#ax²+bx+c şeklindeki ikinci dereceden denklemlerin varsa köklerini bulan program
 a = int(input("İkinci dereceden terimin katsayısı: "))
 b = int(input("Birinci dereceden terimin katsayısı: "))
 c = int(input("Sabit terim: "))
