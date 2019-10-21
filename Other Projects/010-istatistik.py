@@ -1,10 +1,11 @@
+#Oluşturduğunuz Listenin Bazı İstatistiklerini Bulan Program
 liste = []
 a = int(input("Kaç sayı gireceksiniz?\n"))
 
 while (len(liste) < a):
     n = int(input("Sayı girin:"))
     liste.append(n)
-    print(liste)
+    #print(liste)
 
 liste.sort()
 print(liste)
