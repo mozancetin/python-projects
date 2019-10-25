@@ -11,10 +11,10 @@ while(True):
         print(c,"adımda bildim!")
         break
     elif bkmk==1:
-        a=tahmin
+        a=tahmin+1
         c=c+1
     elif bkmk==-1:
-        b=tahmin
+        b=tahmin-1
         c=c+1
 input()
 
