@@ -1,4 +1,4 @@
-#1000'den küçük 3 ve 5'in katlarının toplamı
+#1000'den küçük 3 ve 5'in katlarının toplamını yazdıran program
 toplam=0
 i=1
 while(i<1000):
