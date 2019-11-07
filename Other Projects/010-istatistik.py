@@ -38,10 +38,7 @@ if a % 2 == 0:
     print("Tepe Değeri(Mod):",mod)
     i=0
     
-    toplam=0
-    while(i<=a-1):
-        toplam = toplam + liste[i]
-        i+=1
+    toplam=toplam=sum(liste)
     ao = toplam/a
     print("Aritmetik Ortalama:",ao)
 
@@ -83,29 +80,12 @@ else:
     print("Tepe Değeri(Mod):",mod)
     i=0
     
-    toplam=0
-    while(i<=a-1):
-        toplam = toplam + liste[i]
-        i+=1
+    toplam=toplam=sum(liste)
     ao = toplam/a
     print("Aritmetik Ortalama:",ao)
 
     aciklik = liste[a-1] - liste[0]
     print("Açıklık:",aciklik)
-
-
-    
-"""
-    ceyrekacik = liste[int((a+1)/2)] - liste[]
-
-
-#çeyrekler açıklığı eklenecek
-
-1,2,3,4,5,6,7,8
-
-"""
-
-
 
 input()
 
