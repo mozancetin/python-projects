@@ -81,10 +81,20 @@ def bolenler(n):
         if n%i == 0:
             c += 1
     return(c+1)
-
-
-            
-
-
-  
-
+    
+def bs(n):
+    #bir sayının kaç basamaklı olduğunu geri döndüren fonksiyon
+    bs = 0
+    while(int(n/10)!=0):
+        n = int(n/10)
+        bs += 1
+    return(bs+1)
+def bt(n):
+    #bir sayının basamaklarındaki sayıların toplamını bulan fonksiyon
+    bt = 0
+    while(True):
+        bt = bt + (n - int(n/10)*10)
+        if (n>0):
+            n = int(n/10)
+        else:
+            return(bt)
