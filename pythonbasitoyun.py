@@ -1,19 +1,24 @@
 import random
+import time
 
 """
-balik,tost,simit,cay,para
+balik,tost,simit,cay,para,kılıç,kalkan,zırh(can)
 """
-canta = [0, 0, 0, 0,30]
+canta = [0, 0, 0, 0,30,1,1,1]
 can = 100
 aclik = 100
-print("Game version: Alpha 0.0.0.3\nOyunu denemen için sana 50 TL verdim. İyi eğlenceler")
+print("Game version: Alpha 0.0.0.5\nOyunu denemen için sana 30 TL verdim. İyi eğlenceler")
 nick = input("Sana nasıl seslenmeliyim: ")
 print("Merhaba", nick, "Oyunuma Hoşgeldin!\n")
 while (True):
     print("\n" * 50)
     print("Burada yapabileceğin birkaç şeyi görüyorsun...")
     action = int(input(
-        "Bir eylem gerçekleştirmek için numarasını yaz... \n\n 1 | Market\n 2 | Mini games\n 3 | Çantana bak \n\n "))
+        """
+**************************************************
+Bir eylem gerçekleştirmek için numarasını yaz... \n\n 1 | Market\n 2 | Mini games\n 3 | Çantana bak\n 4 | Savaşa gir.(Kazanırsan +20 tl) \n\n
+**************************************************
+"""))
     if action == 1:
         print("\n" * 50)
         print("Markete hoşgeldin!\n")
@@ -259,6 +264,13 @@ while (True):
                 input("Devam etmek için enter tuşuna bas\n")
 
 
+
+
+
+
+
+
+
         if action==2:
                     if canta[4] >= 10:
                         canta[4] = canta[4] - 10
@@ -331,10 +343,145 @@ while (True):
                         print("\nYeterince paran yok gibi görünüyor")
                         input("Devam etmek için enter tuşuna bas\n")
 
+
+
+
+
+
+
+
     elif action == 3:
         print("\n" * 50)
-        print("Çantanızda: \n\n ", canta[0], "adet balık\n ", canta[1], "adet tost\n ", canta[2], "adet simit\n ",
-              canta[3], "bardak cay\n\nbulunmaktadır...\n\nParanız:",canta[4],"TL")
+        print("Çantanızda: \n\n {} adet balık\n {} adet tost\n {} adet simit\n {} bardak çay\n {} seviye kılıç\n {} seviye kalkan\n {} seviye zırh\n\nbulunmaktadır...\n\nParanız: {} TL".format(canta[0],canta[1],canta[2],canta[3],canta[5],canta[6],canta[7],canta[4]))
         input("\nDevam etmek için enter tuşuna bas\n")
+        
+
+
+
+
+
+    elif action == 4:
+
+        rcan=100
+        t=1
+        #item0=canta5   item1=canta6   item2=canta7
+
+        a=10
+        b=50
+
+        c=10
+        d=50
+
+        if canta[5]==1:
+            a=30
+            b=70
+        if canta[7]==1:
+            can=can+20
+
+
+        while(True):
+            print("\n"*50)
+            attack=random.randint(a,b)
+            rattack=random.randint(c,d)
+            if canta[6]==1:
+                rattack=rattack-1
+    
+            if (t%2) == 1:
+                if attack<=10:
+                    print("[ Tur {} ] Saldırı yapılıyor...".format(t))
+                    time.sleep(1)
+                    print("Weak!",attack)
+                    rcan=rcan-attack
+                    if rcan<=0:
+                            print("Tebrikler rakip öldü!")
+                            break
+                    print("Rakibin kalan canı:",rcan)
+                    time.sleep(2)
+                    t+=1
+                elif 10 < attack <= 20:
+                    print("[ Tur {} ] Saldırı yapılıyor...".format(t))
+                    time.sleep(1)
+                    print("Normal!",attack)
+                    rcan=rcan-attack
+                    if rcan<=0:
+                            print("Tebrikler rakip öldü!")
+                            break
+                    print("Rakibin kalan canı:",rcan)
+                    t+=1
+                    time.sleep(2)
+                elif 20 < attack <= 30:
+                    print("[ Tur {} ] Saldırı yapılıyor...".format(t))
+                    time.sleep(1)
+                    print("Strong!",attack)
+                    rcan=rcan-attack
+                    if rcan<=0:
+                            print("Tebrikler rakip öldü!")
+                            break
+                    print("Rakibin kalan canı:",rcan)
+                    t+=1
+                    time.sleep(2)
+                else:
+                    print("[ Tur {} ] Saldırı yapılıyor...".format(t))
+                    time.sleep(1)
+                    print("Too Strong!",attack)
+                    rcan=rcan-attack
+                    if rcan<=0:
+                            print("Tebrikler rakip öldü! (20 Tl hesabına eklendi.)")
+                            canta[4] += 20
+                            break
+                    print("Rakibin kalan canı:",rcan)
+                    t+=1
+                    time.sleep(2)
+
+        
+            elif (t%2) == 0:
+                if rattack<=10:
+                    print("[ Tur {} ] Rakip saldırı yapıyor...".format(t))
+                    time.sleep(1)
+                    print("Weak!",rattack)
+                    can=can-rattack
+                    if can<=0:
+                            print("Mezarı boyladın!")
+                            break
+                    print("Kalan canın:",can)
+                    t+=1
+                    time.sleep(2)
+                elif 10 < rattack <= 20:
+                    print("[ Tur {} ] Rakip saldırı yapıyor...".format(t))
+                    time.sleep(1)
+                    print("Normal!",rattack)
+                    can=can-rattack
+                    if can<=0:
+                            print("Mezarı boyladın!")
+                            break
+                    print("Kalan canın:",can)
+                    t+=1
+                    time.sleep(2)
+                elif 20 < rattack <= 30:
+                    print("[ Tur {} ] Rakip saldırı yapıyor...".format(t))
+                    time.sleep(1)
+                    print("Strong!",rattack)
+                    can=can-rattack
+                    if can<=0:
+                            print("Mezarı boyladın!")
+                            break
+                    print("Kalan canın:",can)
+                    t+=1
+                    time.sleep(2)
+                else:
+                    print("[ Tur {} ] Rakip saldırı yapıyor...".format(t))
+                    time.sleep(1)
+                    print("Too Strong!",rattack)
+                    can=can-rattack
+                    if can<=0:
+                            print("Mezarı boyladın!")
+                            break
+                    print("Kalan canın:",can)
+                    t+=1
+                    time.sleep(2)
+                    
+        input("Devam etmek için enter...")
+
+        
 
 input()
