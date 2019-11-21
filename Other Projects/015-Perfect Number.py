@@ -1,3 +1,4 @@
+#Girilen sayının mükemmel sayı olup olmadığını kontrol eder.
 n = int(input("Sayı girin: "))
 toplam = 0
 for i in range(1,(n//2)+1):
