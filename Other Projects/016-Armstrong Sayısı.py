@@ -1,3 +1,4 @@
+#Verilen sayının armstrong sayısı olup olmadığını kontrol eden program
 from fonksiyon import bs
 n = int(input("Bir sayı girin: "))
 toplam = 0
