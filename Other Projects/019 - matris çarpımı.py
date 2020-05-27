@@ -1,4 +1,5 @@
 #matris çarpımı
+#Requires numpy
 
 print("Matrislerin boyutlarını girin ( A(mxn) , B(nxp) )")
 
