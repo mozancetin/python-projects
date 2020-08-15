@@ -38,7 +38,7 @@ if a % 2 == 0:
     print("Tepe Değeri(Mod):",mod)
     i=0
     
-    toplam=toplam=sum(liste)
+    toplam=sum(liste)
     ao = toplam/a
     print("Aritmetik Ortalama:",ao)
 
