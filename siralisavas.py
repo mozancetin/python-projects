@@ -3,7 +3,7 @@ import random
 rcan=10
 can=10
 t=1
-item=[1,1,1] #kılıç(fazla vurma) , kalkan(hasar azaltma) , kıyafet(can) 
+item=[1,1,1] #kılıç(fazla vurma) , kalkan(hasar azaltma) , zırh(can) 
 
 a=1
 b=5
