@@ -98,3 +98,8 @@ def bt(n):
             n = int(n/10)
         else:
             return(bt)
+def ayna(sayi):
+    if int(str(sayi)[::-1]) == sayi:
+        return True
+    else:
+        return False
